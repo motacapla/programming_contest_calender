@@ -89,8 +89,8 @@ if __name__ == "__main__":
         ID = 'id'+ str(time.mktime(datetime.strptime(date[i], "%Y-%m-%d %H:%M:%S").timetuple()))
         doc_ref = db.collection(u'contests').document(ID)
         doc_ref.set({
-            u'contest_name': 'AtCoder',            
-            u'name': name[i],
+            u'contest_name': 'AtCoder',
+            u'title': name[i],
             u'date': date[i],
             u'url':  url[i],
         })

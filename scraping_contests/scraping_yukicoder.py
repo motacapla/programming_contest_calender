@@ -94,7 +94,7 @@ if __name__ == "__main__":
         doc_ref = db.collection(u'contests').document(ID)
         doc_ref.set({
             u'contest_name': 'yukicoder',
-            u'name': name[i],
+            u'title': name[i],
             u'date': date[i],
             u'url':  url[i],
         })

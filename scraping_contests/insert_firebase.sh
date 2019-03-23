@@ -2,3 +2,4 @@
 
 python3 ./init_scraping_atcoder.py
 python3 ./scraping_codeforces.py
+python3 ./scraping_yukicoder.py

@@ -68,7 +68,7 @@ def get_codeforces_contests():
         if(text == None):
             continue
         if(rep1.match(text)):
-            li.append("https://codeforces.com/contests"+res.get("href"))
+            li.append("https://codeforces.com"+res.get("href"))
         else:
             li.append(text)
 
@@ -137,7 +137,7 @@ if __name__ == "__main__":
         doc_ref = db.collection(u'contests').document(ID)
         doc_ref.set({
             u'contest_name': 'Codeforces',
-            u'name': name[i],
+            u'title': name[i],
             u'date': date[i],
             u'url':  url[i],
         })
